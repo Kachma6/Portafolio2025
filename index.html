@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kera</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <title>Creative Developer</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Londrina+Outline&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
 </head>
 <body>
+  <header>
+    <div class="header-logo">Kera</div>
+    <nav id="menu-bar">
+      <a  href="#about">Acerca de mi</a>
+      <a  href="#projects">Proyectos</a>
+      <a   href="#contact">Contacto</a>
+    </nav>
     
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-xmark" id="close-icon"></i>
+  </header>
+  <main class="centered">
+    <div class="ctn-title">
+        <h1>
+            <span class="title first">Hi. I am a</span>
+            <span class="title second">Creative Developer</span>
+          </h1>
+          <button class="btn">My Work</button>
+    </div>
+   
+    <!-- <div class="puzzle-piece piece-1"></div>
+    <div class="puzzle-piece piece-2"></div>
+    <div class="puzzle-piece piece-3"></div> -->
+    <!-- <div class="puzzle-piece piece-4"></div> -->
+    <svg class="puzzle-piece piece-1" width="302" height="370" viewBox="0 0 302 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 298.329L3 208.431V205.586C3 205.586 23.0078 225.095 38.3113 223.225C57.2785 220.906 71.5404 204.667 69.6359 185.672C67.9273 168.631 55.3249 157.053 38.3113 154.948C23.1081 153.067 3 172.017 3 172.017L3 70.7399H105.517C105.517 70.7399 83.6101 54.9217 82.7353 40.0154C81.575 20.2425 97.6711 2.13351 117.477 3.0321C135.231 3.83762 147.406 17.8174 149.371 35.4636C151.065 50.674 132.285 70.7399 132.285 70.7399H230.815V172.017L237.08 165.758C271.99 142.186 288.338 149.258 298.021 181.69C307.703 214.121 242.697 219.259 230.815 200.466V298.329H129.437C129.437 298.329 130.758 302.058 132.285 304.019C134.747 307.181 137.74 307.154 140.828 309.709C144.585 312.816 147.109 314.495 149.371 318.812C153.291 326.293 151.52 332.267 149.371 340.433C147.525 347.449 145.843 351.686 140.828 356.933C136.008 361.977 132.155 364.094 125.451 366.037C117.974 368.204 105.517 366.037 105.517 366.037C105.517 366.037 96.2692 361.577 91.8479 356.933C86.7711 351.601 84.2754 347.63 82.7353 340.433C80.9531 332.105 82.7592 326.848 85.583 318.812C88.7304 309.856 98.6824 298.329 98.6824 298.329H3Z" stroke="black" stroke-width="5"/>
+        </svg>
+        <svg class="puzzle-piece piece-2" width="302" height="370" viewBox="0 0 302 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 298.329L3 208.431V205.586C3 205.586 23.0078 225.095 38.3113 223.225C57.2785 220.906 71.5404 204.667 69.6359 185.672C67.9273 168.631 55.3249 157.053 38.3113 154.948C23.1081 153.067 3 172.017 3 172.017L3 70.7399H105.517C105.517 70.7399 83.6101 54.9217 82.7353 40.0154C81.575 20.2425 97.6711 2.13351 117.477 3.0321C135.231 3.83762 147.406 17.8174 149.371 35.4636C151.065 50.674 132.285 70.7399 132.285 70.7399H230.815V172.017L237.08 165.758C271.99 142.186 288.338 149.258 298.021 181.69C307.703 214.121 242.697 219.259 230.815 200.466V298.329H129.437C129.437 298.329 130.758 302.058 132.285 304.019C134.747 307.181 137.74 307.154 140.828 309.709C144.585 312.816 147.109 314.495 149.371 318.812C153.291 326.293 151.52 332.267 149.371 340.433C147.525 347.449 145.843 351.686 140.828 356.933C136.008 361.977 132.155 364.094 125.451 366.037C117.974 368.204 105.517 366.037 105.517 366.037C105.517 366.037 96.2692 361.577 91.8479 356.933C86.7711 351.601 84.2754 347.63 82.7353 340.433C80.9531 332.105 82.7592 326.848 85.583 318.812C88.7304 309.856 98.6824 298.329 98.6824 298.329H3Z" stroke="black" stroke-width="5"/>
+            </svg>
+            <svg class="puzzle-piece piece-3" width="302" height="370" viewBox="0 0 302 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 298.329L3 208.431V205.586C3 205.586 23.0078 225.095 38.3113 223.225C57.2785 220.906 71.5404 204.667 69.6359 185.672C67.9273 168.631 55.3249 157.053 38.3113 154.948C23.1081 153.067 3 172.017 3 172.017L3 70.7399H105.517C105.517 70.7399 83.6101 54.9217 82.7353 40.0154C81.575 20.2425 97.6711 2.13351 117.477 3.0321C135.231 3.83762 147.406 17.8174 149.371 35.4636C151.065 50.674 132.285 70.7399 132.285 70.7399H230.815V172.017L237.08 165.758C271.99 142.186 288.338 149.258 298.021 181.69C307.703 214.121 242.697 219.259 230.815 200.466V298.329H129.437C129.437 298.329 130.758 302.058 132.285 304.019C134.747 307.181 137.74 307.154 140.828 309.709C144.585 312.816 147.109 314.495 149.371 318.812C153.291 326.293 151.52 332.267 149.371 340.433C147.525 347.449 145.843 351.686 140.828 356.933C136.008 361.977 132.155 364.094 125.451 366.037C117.974 368.204 105.517 366.037 105.517 366.037C105.517 366.037 96.2692 361.577 91.8479 356.933C86.7711 351.601 84.2754 347.63 82.7353 340.433C80.9531 332.105 82.7592 326.848 85.583 318.812C88.7304 309.856 98.6824 298.329 98.6824 298.329H3Z" stroke="black" stroke-width="5"/>
+                </svg>
+    <svg class="puzzle-piece piece-4" width="302" height="370" viewBox="0 0 302 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 298.329L3 208.431V205.586C3 205.586 23.0078 225.095 38.3113 223.225C57.2785 220.906 71.5404 204.667 69.6359 185.672C67.9273 168.631 55.3249 157.053 38.3113 154.948C23.1081 153.067 3 172.017 3 172.017L3 70.7399H105.517C105.517 70.7399 83.6101 54.9217 82.7353 40.0154C81.575 20.2425 97.6711 2.13351 117.477 3.0321C135.231 3.83762 147.406 17.8174 149.371 35.4636C151.065 50.674 132.285 70.7399 132.285 70.7399H230.815V172.017L237.08 165.758C271.99 142.186 288.338 149.258 298.021 181.69C307.703 214.121 242.697 219.259 230.815 200.466V298.329H129.437C129.437 298.329 130.758 302.058 132.285 304.019C134.747 307.181 137.74 307.154 140.828 309.709C144.585 312.816 147.109 314.495 149.371 318.812C153.291 326.293 151.52 332.267 149.371 340.433C147.525 347.449 145.843 351.686 140.828 356.933C136.008 361.977 132.155 364.094 125.451 366.037C117.974 368.204 105.517 366.037 105.517 366.037C105.517 366.037 96.2692 361.577 91.8479 356.933C86.7711 351.601 84.2754 347.63 82.7353 340.433C80.9531 332.105 82.7592 326.848 85.583 318.812C88.7304 309.856 98.6824 298.329 98.6824 298.329H3Z" stroke="black" stroke-width="5"/>
+        </svg>
+  </main>
+  <section>
+
+  </section>
+  <section id="projects">
+    <h2>Mis Proyectos...</h2>
+    <div class="ctn-projects centered">
+          <a class="ctn-project" >
+            <div class="ctn-project-img">
+                <img src="./images/project1.png" alt="Proyecto Active Recall">
+            </div>
+            <div class="ctn-project-body">
+                <div class="ctn-project-body-title">
+<h3>Aplicacion web para memorizacion basada en el Metodo Active Recall</h3>
+                </div>
+                <div class="ctn-project-body-subtitle">
+ <p>Desarrollada para la optimizacion de los estudiantes universitarios</p>
+                </div>
+                <div class="ctn-project-body-tech">
+                    <span>React JS</span>
+                    <span>Spring Boot</span>
+                    <span>PostgreSQL</span>
+                </div>
+                
+            </div>
+
+        </a>
+
+        <a class="ctn-project">
+            <div class="ctn-project-img">
+                <img src="./images/imagen-pyxcel.png" alt="Proyecto Active Recall">
+            </div>
+            <div class="ctn-project-body">
+                <div class="ctn-project-body-title">
+<h3>Aplicacion web aprender Excel Basico</h3>
+                </div>
+                <div class="ctn-project-body-subtitle">
+ <p>Desarrollada para la optimizacion de los estudiantes universitarios</p>
+                </div>
+                <div class="ctn-project-body-tech">
+                    <span>React JS</span>
+                    <span>Spring Boot</span>
+                    <span>PostgreSQL</span>
+                </div>
+                
+            </div>
+
+        </a>
+
+        <a class="ctn-project">
+            <div class="ctn-project-img">
+                <img src="./images/saad.png" alt="Proyecto Active Recall">
+            </div>
+            <div class="ctn-project-body">
+                <div class="ctn-project-body-title">
+<h3>Aplicacion web para la organizacion</h3>
+                </div>
+                <div class="ctn-project-body-subtitle">
+ <p>Desarrollada para la optimizacion de los estudiantes universitarios</p>
+                </div>
+                <div class="ctn-project-body-tech">
+                    <span>React JS</span>
+                    <span>Spring Boot</span>
+                    <span>PostgreSQL</span>
+                </div>
+                
+            </div>
+
+        </a>
+    </div>
+
+  </section>
+  <section id="contact" class="centered">
+    <div class="ctn-form centered">
+        <h2>Talk with me...</h2>
+    <form id="btn-send" >
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre: </label>
+            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" aria-label="Nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email: </label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" aria-label="Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje: </label>
+            <input type="text" class="form-control" id="message" placeholder="Ingresa tu mensaje" aria-label="Mensaje" required>
+          </div>
+        <button type="submit" class="btn" >Send Message</button>
+    </form>
+    <div id="liveAlertPlaceholder"></div>
+   
+    </div>
+</section>
+<footer>
+    <div class="ctn-footer centered">
+        <a href="https://www.linkedin.com/in/karen-choquecallata-6294811b8" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #000000;"></i></a>
+        <a href="https://www.instagram.com/karem_mancilla6/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+        <a href="https://github.com/Kachma6" target="_blank"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/25ba482a49.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="module" src="./script.js"></script>
+<script type="module" src="./firebase/license.js"></script>
 </body>
 </html>

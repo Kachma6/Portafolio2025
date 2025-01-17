@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    
+  }
+
+  header {
+    position: fixed;
+    top: 10px;
+    right: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 6;
+    background: rgba(255, 255, 255, 0.56);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.5px);
+-webkit-backdrop-filter: blur(9.5px);
+border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .header-logo{
+    font-family: "Itim", cursive;
+  }
+  nav{
+    
+    padding: 8px;
+    border-radius: 12px;
+  }
+  #menu-icon{
+    display: none;
+  }
+  #close-icon{
+    display: none;
+  }
+  header a {
+    margin: 0 16px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+  }
+
+  main {
+    
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+  }
+
+  h1 {
+    font-size: 10rem;
+    margin: 0;
+  }
+  h2{
+    font-family: "Londrina Outline", sans-serif;
+    font-size: 4rem;
+  }
+  h3{
+    font-family: "Itim", cursive;
+  }
+  .title.second{
+    font-family: "Londrina Outline", sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+    font-style: normal;
+  }
+  .title.first{
+    font-family: "Itim", cursive;
+    font-size: 7rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h1 span {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    
+    /* color: transparent; */
+    -webkit-text-stroke: 1px #000;
+  }
+  /* centered */
+  .centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button.btn {
+    margin-top: 20px;
+    padding: 6px 40px;
+    font-size: 1rem;
+    border: 2px solid #000;
+    background: none;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: -8px 8px black;
+  }
+
+  .puzzle-piece {
+    position: absolute;
+    transform-origin: center;
+    animation: float 5s infinite;
+    z-index: 1;
+    overflow: hidden;
+
+   
+  }
+  #liveAlertPlaceholder{
+   /* background-color: red; */
+   min-width: 330px;
+   width: 30%;
+   height: 100px;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+
+   
+   
+  }
+
+  /* PROJECTS  */
+  #projects{
+   margin: 10%;
+  }
+  .ctn-project{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 1px;
+    border-radius: 16px;
+    margin: 30px;
+  }
+  .ctn-project:hover{
+    background-color: red;
+  }
+  .ctn-project-img{
+    width: 100%;
+    height: 50%;
+    border-radius: inherit;
+  }
+  .ctn-project-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0 0 ;
+  }
+ .ctn-project-body{
+    margin: 20px;
+    height: 50%;
+ }
+ .ctn-project-body-subtitle p{
+  color: gray;
+  font-size: 0.8rem;
+ }
+ .ctn-project-body-tech span{
+    background-color: rgb(184, 184, 184);
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.7rem;
+ }
+
+  /* FORMULARIO */
+  #contact{
+    padding: 50px ;
+
+  }
+  .ctn-form{
+   
+    flex-direction: column;
+    width: 70%;
+    
+  }
+  .ctn-form form{
+    
+    width: 100%;
+
+
+  }
+  /* FOOTER */
+  .ctn-footer{
+    height: 30vh;
+    
+  }
+  .ctn-footer  i{
+    margin: 10px;
+    font-size: 30px;
+   
+  }
+
+  @keyframes float {
+    0% { transform: rotate(0deg) translate(0, 0); }
+    25% { transform: rotate(15deg) translate(10px, -10px); }
+    50% { transform: rotate(0deg) translate(-10px, 10px); }
+    75% { transform: rotate(-15deg) translate(10px, 10px); }
+    100% { transform: rotate(0deg) translate(0, 0); }
+  }
+
+  .piece-1 { top: 10%; left: 10%; animation-delay: 0s; width: 200px; height: 200px; }
+  .piece-2 { top: 5%; right: 10%; animation-delay: 1s;  width: 100px; height: 100px; }
+  .piece-3 { bottom: 5%; left: 15%; animation-delay: 2s;  width: 100px; height: 100px;}
+  .piece-4 { bottom: -5%; right: -12%; animation-delay: 3s;  width: 400px; height: 450px; }
+
+  /*  RESPONSIVE DESIGN TABLET */
+  @media (min-width: 1200px){
+    
+    #menu-icon{
+      display: none !important;
+    }
+    #close-icon{
+      display:none !important;
+     
+    }
+    nav{
+      display: block !important;
+    }
+  }
+  @media(max-width: 1199px) and (min-width: 769px){
+    main {
+    
+        margin: 0 5%;
+       
+        
+      }
+      #menu-icon{
+        display: block;
+      }
+      nav{
+        display: none;
+      }
+      .desplegable{
+        background-color: white;
+        display: block;
+        width: 100%;
+        position: absolute;
+       top: 50px;
+       border-radius: 0;
+      }
+      .desplegable2{
+        width: 100%;
+        display: block;
+        padding: 8px 20px;
+      }
+      
+      header {
+        justify-content: space-between;
+        padding: 10px 50px;
+      }
+
+
+      /* PROJECTS  */
+      #projects{
+        margin: 10%;
+       }
+       .ctn-projects.centered{
+        flex-direction: column ;
+       }
+       .ctn-project{
+         display: block;
+         text-decoration: none;
+         color: black;
+         width: 400px;
+         height: 500px;
+         border: 1px solid black;
+         box-shadow: 4px 4px 1px;
+         border-radius: 16px;
+         margin: 30px;
+       }
+      
+       .ctn-project-img{
+         width: 100%;
+         height: 50%;
+         border-radius: inherit;
+       }
+       .ctn-project-img img{
+         width: 100%;
+         height: 100%;
+         border-radius: 16px 16px 0 0 ;
+       }
+      .ctn-project-body{
+         margin: 20px;
+         height: 50%;
+      }
+      .ctn-project-body-subtitle p{
+       color: gray;
+       font-size: 0.8rem;
+      }
+      .ctn-project-body-tech span{
+         background-color: rgb(184, 184, 184);
+         padding: 4px 10px;
+         border-radius: 16px;
+         font-size: 0.7rem;
+      }
+     
+  }
+  /* RESPONSIVE DESIGN CELLPHONE */
+  @media(max-width:768px){
+    main {
+    
+        margin: 0 5%;
+       
+        
+      }
+       #menu-icon{
+        display:block;
+      }
+      nav{
+        display: none;
+
+      }
+    
+      header {
+      
+        justify-content: space-between;
+      }
+
+      .desplegable{
+        background-color: white;
+        display: block;
+        width: 100%;
+        position: absolute;
+       top: 50px;
+       border-radius: 0;
+      }
+      .desplegable2{
+        width: 100%;
+        display: block;
+        padding: 8px 20px;
+      }
+
+  }
