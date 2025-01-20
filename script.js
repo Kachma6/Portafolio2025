@@ -4,17 +4,16 @@ const menuIcon = document.getElementById("menu-icon")
 const menuBar = document.getElementById("menu-bar")
 const closeIcon = document.getElementById("close-icon")
 const btnSend = document.getElementById("btn-send")
-// True = showed and false = not showed
-
-
+const btnMyWork = document.getElementById("btn-my-work")
+const header = document.getElementById("ctn-header")
+// Variable para guardar la posición anterior del scroll
+let lastScrollTop = 0;
+let scrollTop = false;
 
 menuIcon.addEventListener("click", () => {  
          menuBar.style.display = "block"
-       // menuBar.classList.add("active")
          closeIcon.style.display = "block"
-      //  closeIcon.classList.add("active")
          menuIcon.style.display ="none";
-        // menuIcon.classList.add("inactive")
          const itemsMenuBar = document.querySelectorAll("nav a");
          menuBar.classList.add("desplegable");
          for(const item of  itemsMenuBar){
@@ -98,3 +97,44 @@ const appendAlert = (message, type) => {
 //     appendAlert('Nice, you triggered this alert message!', 'success')
 //   })
 // }
+btnMyWork.addEventListener("click", ()=>{
+   window.scrollBy(0,500)
+})
+
+
+
+// Agregar un evento de scroll a la ventana
+window.addEventListener("scroll", () => {
+    // Obtener la posición actual del scroll
+    const currentScrollTop = document.documentElement.scrollTop;
+  
+    // Comparar la posición actual con la anterior
+    if (currentScrollTop < lastScrollTop) {
+        // console.log("El usuario está haciendo scroll hacia arriba");
+       
+        header.style.transform = "translateY(0%)";
+        closeIcon.style.display ="none"
+        menuIcon.style.display ="block"
+        menuBar.style.display ="none"
+        menuBar.classList.remove("desplegable");
+        const itemsMenuBar = document.querySelectorAll("nav a");
+        for(const item of  itemsMenuBar){
+           item.classList.remove("desplegable2")
+        } 
+       
+    } else if (currentScrollTop > lastScrollTop) {
+        // console.log("El usuario está haciendo scroll hacia abajo");
+        header.style.transform = "translateY(-100%)";
+        closeIcon.style.display ="none"
+        menuIcon.style.display ="block"
+        menuBar.style.display ="none"
+        menuBar.classList.remove("desplegable");
+        const itemsMenuBar = document.querySelectorAll("nav a");
+        for(const item of  itemsMenuBar){
+           item.classList.remove("desplegable2")
+        } 
+    }
+
+    // Actualizar la posición anterior
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Evitar valores negativos
+});
