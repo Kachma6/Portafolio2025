@@ -15,8 +15,8 @@ body {
 header {
   position: sticky;
   top: 0px;
-  right: 0%;
-  left: 0%;
+  right: 0;
+  left: 0;
   transition: transform 0.3s ease-in-out;
   display: flex;
   justify-content: space-around;
@@ -224,7 +224,7 @@ button.btn:hover{
 .ctn-form {
 
   flex-direction: column;
-  width: 70%;
+  width: 50%;
 
 }
 
@@ -409,14 +409,22 @@ button.btn:hover{
     border-radius: 16px;
     font-size: 0.7rem;
   }
+  /* Footer */
+ 
+  .ctn-form {
+  
+    flex-direction: column;
+    width: 70%;
+  
+  }
+  
 
 }
 
 /* RESPONSIVE DESIGN CELLPHONE */
 @media(max-width:768px) {
   main {
-
-   margin: 10px;
+   padding: 10px;
 
 
   }
@@ -431,9 +439,10 @@ button.btn:hover{
   }
 
   header {
-
+   
     justify-content: space-between;
     padding: 0 5%;
+   
   }
 
   .title.second {
@@ -479,12 +488,13 @@ button.btn:hover{
     display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    min-width: 100%;
+    max-width: 95%;
     height: 500px;
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 4px 4px 1px;
-    border-radius: 16px;
-    margin: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 70px;
   }
 
   .ctn-project-img {
@@ -496,7 +506,7 @@ button.btn:hover{
   .ctn-project-img img {
     width: 100%;
     height: 100%;
-    border-radius: 16px 16px 0 0;
+    border-radius: 0;
   }
 
   .ctn-project-body {
@@ -515,8 +525,27 @@ button.btn:hover{
     border-radius: 16px;
     font-size: 0.7rem;
   }
+  
+/* FORMULARIO */
+/* #contact {
+  padding: 50px;
+  height: 90vh;
+
+} */
+
+.ctn-form {
+
+  flex-direction: column;
+  width: 90%;
+
+}
 
 
+  /* FOOTER */
+  .ctn-end{
+  
+    flex-direction: column;
+  }
   /* .piece-1 { top: 10%; left: 10%; animation-delay: 0s; width: 200px; height: 200px; }
   .piece-2 { top: 5%; right: 10%; animation-delay: 1s;  width: 100px; height: 100px; }
   .piece-3 { bottom: 5%; left: 15%; animation-delay: 2s;  width: 100px; height: 100px;} */
