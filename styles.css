@@ -1,3 +1,12 @@
+:root {
+  --color-white: #fff;
+  --color-gray: #c4c4c4;
+  --color-black: #000;
+  --color-purple: #8000ff;
+  --color-light-purple: #cf59e6;
+  --color-light-blue: #6bc5f8;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -30,16 +39,12 @@ header {
 
 .header-logo {
   font-family: "Itim", cursive;
-  background-color: black;
-  border-radius: 50%;
-  margin: 4px 0;
-
+  width: 60px;
+ 
 }
 
-.header-logo a {
-  color: white;
-  font-size: 13px;
-  letter-spacing: 4px;
+.header-logo a img{
+  width: 100%;
 }
 
 #menu-icon {
@@ -52,7 +57,7 @@ header {
 
 header a {
   display: inline-block;
-  padding: 15px 10px;
+  padding: 25px 10px;
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -60,7 +65,7 @@ header a {
 
 }
 
-header a:hover {
+header nav a:hover {
   background-color: black;
   color: white
 }
@@ -70,7 +75,7 @@ main {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-
+  
 }
 
 h1 {
@@ -92,6 +97,16 @@ h3 {
   font-weight: 400;
   font-size: 8rem;
   font-style: normal;
+  /* background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple)); */
+  /* -webkit-text-fill-color: transparent; */
+  /* animation: gradient 3s ease infinite;
+  background-size: 400% 400%; */
+  /* background-clip: text;  */
+  /* background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+  background-size: 400% 400%;
+  /* -webkit-background-clip: text; */
+/* -webkit-text-fill-color: transparent;
+animation: gradient 3s ease infinite;  */
 }
 
 .title.first {
@@ -156,7 +171,7 @@ button.btn:hover{
 #projects {
   background-color: #151618;
   color: #fff;
-  padding: 5% 15%;
+  padding: 10% 15%;
 }
 .ctn-projects{
   margin: 80px 0;
